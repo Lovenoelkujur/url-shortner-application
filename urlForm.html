@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>URL Shortener</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>URL Shortener</h1>
+        <form action="/url-shotner" method="post">
+            <label for="longUrl">Enter a long URL:</label>
+            <input type="url" id="longUrl" name="longUrl" placeholder="Enter URL to Convert" required>
+            <button type="submit">Shorten URL</button>
+        </form>
+        <div class="get-short-url">
+            <label class="lab-short" for="shortUrl">Generated Short ULR</label>
+            <input type="text" id="shortUrl" name="shortUrl" placeholder="Get Short Url" >
+        </div>
+    </div>
+</body>
+</html>

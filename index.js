@@ -36,7 +36,7 @@ app.post("/url-shotner", (req, res) => {
 
     const urlFileData = fs.readFileSync("urlmap.json", {encoding: "UTF-8"});
     const urlFileDataJson = JSON.parse(urlFileData);
-    console.log(urlFileDataJson);
+    // console.log(urlFileDataJson);
     urlFileDataJson[shortUrl] = req.body.url;
     fs.writeFileSync("urlmap.json", JSON.stringify(urlFileDataJson));
 
